@@ -45,6 +45,13 @@ Y_pred = lr.predict(X_test)
 print("Accuracy: ", lr.score(X_test, Y_test))    #Accuracy:  0.9881695157291261
 print("Mean Squared Error: ", mean_squared_error(Y_test, Y_pred))   #Mean Squared Error:  0.017650963976937245
 
+#plotting the train set results
+plt.scatter(X_train, Y_train, c = 'blue')
+plt.plt(X_train, lr.predict(X_train), c = 'black')
+plt.show()
+
+
+
 
 
 
